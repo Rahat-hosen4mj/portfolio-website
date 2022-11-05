@@ -33,13 +33,42 @@ ul{
     min-height: 100vh;
     /* width: 80%; */
     display: block;
-    position: fixed;
+    opacity: 1;
+    /* position: fixed; */
     padding: 0 30px;
     /* left: 270px;
     top: 0;
     right: 0;
-    opacity: 1;
+    
     z-index: 0; */
+}
+.section_title h2{
+    font-size: 40px;
+    color: var(--text-black-900);
+    position: relative;
+    margin-bottom: 60px;
+}
+.section_title h2::after{
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 50px;
+    background: var(--skin-color);
+    top: 100%;
+    left: 0;
+}
+.section_title h2::before{
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 25px;
+    background: var(--skin-color);
+    top: 100%;
+    left: 0;
+    margin-top: 8px;
+}
+.hidden{
+    display: none !important;
 }
 .main_content{
     padding-left: 270px;
@@ -253,3 +282,59 @@ h3.my_profession{
     border: 1px solid var(--bg-black-900);
     border-radius: 7px;
 }
+/* ======== home section end ====== */
+/* ======== about me section start ====== */
+.section .container{
+    padding-top: 50px;
+    padding-bottom: 60px;
+}
+.section_title{
+    flex: 0 0 100%;
+    max-width: 100%;
+    /* background: pink; */
+}
+.about .about_content{
+    flex: 0 0 100%;
+    max-width: 100%;
+    /* background: rgb(142, 24, 44); */
+}
+.about .about_content .about_text{
+    flex: 0 0 100%;
+    max-width: 100%;
+    /* background: rgb(196, 30, 57); */
+}
+.about .about_content .about_text h3{
+    font-size: 24px;
+    color: var(--text-black-900);
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.about_content .about_text h3 span{
+    color: var(--skin-color);
+}
+.about_content .about_text p{
+    font-size: 16px;
+    line-height: 25px;
+    color: var(--text-black-700);
+}
+.about .about_content .personal_info{
+    flex: 0 0 60%;
+    max-width: 60%;
+    background: pink;
+}
+.about .about_content .skills{
+   flex: 0 0 40%;
+   max-width: 40%;
+   background: green;
+}
+
+
+
+
+
+
+
+
+
+
+/* ======== about me section end ====== */
