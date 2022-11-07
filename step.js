@@ -10,4 +10,6 @@
  * 8. h3 ke style span ke color
  * 9. p er line hight color
  * 10. second row er niche ar ektah row niey tateh skill add kora
+ * ================ about section er personal info ==========
+ * personal info er maje row niey tar meje info item guli rakbo
  */

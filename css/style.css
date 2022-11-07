@@ -70,6 +70,9 @@ ul{
 .hidden{
     display: none !important;
 }
+.dark_shadow{
+    box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+}
 .main_content{
     padding-left: 270px;
 }
@@ -320,12 +323,149 @@ h3.my_profession{
 .about .about_content .personal_info{
     flex: 0 0 60%;
     max-width: 60%;
-    background: pink;
+    /* background: pink; */
+    margin-top: 40px;
 }
+.about .about_content .personal_info .info_item{
+    flex: 0 0 50%;
+    max-width: 50%;
+    /* background: rgb(200, 25, 54); */
+}
+.about .about_content .personal_info .info_item p{
+    padding: 10px 0;
+    color: var(--text-black-900);
+    font-size: 16px;
+    border-bottom: 1px solid var(--bg-black-50);
+}
+.about .about_content .personal_info .info_item p span{
+    font-weight: 400;
+    color: var(--text-black-700);
+    margin-left: 4px;
+    display: inline-block;
+}
+.about .about_content .personal_info .buttons{
+    margin-top: 30px;
+}
+.about .about_content .personal_info .buttons .btn{
+    margin-right: 15px;
+    margin-top: 10px;
+}
+
 .about .about_content .skills{
    flex: 0 0 40%;
    max-width: 40%;
-   background: green;
+   margin-top: 40px;
+   /* background: green; */
+}
+.about .about_content .skills .skill_item{
+    flex: 0 0 100%;
+     max-width: 100%;
+     margin-bottom: 17px;
+    /* background: pink; */
+}
+.about .about_content .skills .skill_item h5{
+    line-height: 40px;
+    font-weight: 600;
+    color: var(--text-black-900);
+    text-transform: uppercase;
+    font-size: 16px;
+}
+.about .about_content .skills .skill_item .progress{
+    background-color: var(--bg-black-50);
+    height: 7px;
+    border-radius: 4px;
+    width: 100%;
+    position: relative;
+}
+.about .about_content .skills .skill_item .progress_in{
+    position: absolute;
+    background: var(--skin-color);
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+.about .about_content .skills .skill_item .skill_percent{
+    position: absolute;
+    top: -40px;
+    right: 0;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 40px;
+    color: var(--text-black-700);
+}
+.about .about_content .education,
+.about .about_content .experience{
+    flex: 0 0 50%;
+    max-width: 50%;
+    /* background-color: var(--skin-color); */
+    margin-top: 30px;
+}
+.about .about_content h3.tittle{
+    font-weight: 700;
+    color: var(--text-black-900);
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+.about .about_content .timeline_box{
+    flex: 0 0 100%;
+    max-width: 100%;
+    /* background: var(--skin-color); */
+}
+.about .about_content .timeline{
+    background: var( --bg-black-100);
+    padding: 30px 25px;
+    border: 1px solid var(--bg-black-50);
+    position: relative;
+    border-radius: 5px;
+}
+.about .about_content .timeline_item{
+    position: relative;
+    padding-bottom: 40px;
+    padding-left: 35px;
+}
+.about .about_content .timeline_item:last-child{
+    padding-bottom: 0;
+}
+.about .about_content .timeline .timeline_item::before{
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 100%;
+    top: 0;
+    left: 7px;
+    background: var(--skin-color);
+}
+.about .about_content .timeline .circle_dot{
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    background: var(--skin-color);
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+}
+.about .about_content .timeline .timeline_date{
+    font-weight: 400;
+    color: var(--text-black-700);
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+.about .about_content .timeline .timeline_date .fa{
+    margin-right: 5px;
+}
+.about .about_content .timeline .timeline_tittle{
+    font-weight: 700;
+    color: var(--text-black-900);
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.about .about_content .timeline .timeline_text{
+    color: var(--text-black-700);
+    font-size: 16px;
+    text-align: justify;
+}
+.about .about_content .experience{
+    /* background-color: burlywood; */
 }
 
 
