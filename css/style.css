@@ -458,6 +458,7 @@ h3.my_profession{
     color: var(--text-black-900);
     font-size: 18px;
     margin-bottom: 10px;
+    /* text-transform: uppercase; */
 }
 .about .about_content .timeline .timeline_text{
     color: var(--text-black-700);
@@ -467,6 +468,54 @@ h3.my_profession{
 .about .about_content .experience{
     /* background-color: burlywood; */
 }
+/* ========= service section start =========== */
+.service .service_item{
+    margin-bottom: 30px;
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+}
+.service .service_item_inner{
+    background-color: var(--bg-black-100);
+    padding: 30px 15px;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid var(--bg-black-50);
+}
+.service .service_item_inner .icon{
+    height: 60px;
+    width: 60px;
+    /* background: var(--skin-color); */
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 auto 30px;
+    display: block;
+    transition: all 0.3s ease;
+}
+.service .service_item_inner .icon .fa{
+    font-size: 40px;
+    line-height: 60px;
+    color: var(--skin-color);
+}
+.service_item_inner:hover .icon{
+    background-color: var(--skin-color);
+}
+.service_item_inner:hover .icon .fa{
+    color: #fff;
+    font-size: 30px;
+}
+.service .service_item_inner h4{
+   font-size: 18px;
+   color: var(--text-black-900);
+   font-weight: 700;
+   text-transform: capitalize;
+   margin-bottom: 15px;
+}
+.service_item_inner p{
+    color: var(--text-black-700);
+    font-size: 16px;
+    line-height: 25px;
+}
+/* ========= service section end =========== */
 
 
 
