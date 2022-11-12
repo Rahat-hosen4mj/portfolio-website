@@ -519,7 +519,7 @@ h3.my_profession{
 /* ========= portfolio section start =========== */
 .portfolio .container{
     /* background: #b1e4b1; */
-    padding-bottom: 30px;
+    padding-bottom: 25px;
 }
 .portfolio .portfolio_heading {
     flex: 0 0 100%;
@@ -580,8 +580,46 @@ h3.my_profession{
   color: var(--skin-color);
   font-size: 18px;
 }
-
 /* ========= portfolio section end =========== */
+/* ========= Contact section start =========== */
+.contact .contact_tittle{
+    color: var(--skin-color);
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.contact .contact_sub_tittle{
+    color: var(--text-black-900);
+    font-size: 18px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.contact .contact_info_item{
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+.contact_info_item .icon{
+    display: block;
+}
+.contact_info_item .icon .fa{
+    font-size: 25px;
+    color: var(--skin-color);
+}
+.contact_info_item h4{
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text-black-900);
+    text-transform: capitalize;
+    margin: 15px 0 5px;
+}
+.contact_info_item p{
+    font-size: 16px;
+    line-height: 25px;
+    color: var(--text-black-700);
+}
+/* ========= Contact section end =========== */
 
 
 
