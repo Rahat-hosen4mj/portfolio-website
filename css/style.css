@@ -516,6 +516,72 @@ h3.my_profession{
     line-height: 25px;
 }
 /* ========= service section end =========== */
+/* ========= portfolio section start =========== */
+.portfolio .container{
+    /* background: #b1e4b1; */
+    padding-bottom: 30px;
+}
+.portfolio .portfolio_heading {
+    flex: 0 0 100%;
+    /* background: red; */
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+.portfolio .portfolio_heading h2{
+    color: var(--text-black-900);
+    font-weight: 500;
+    /* text-align: center; */
+}
+.portfolio .portfolio_item{
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    padding: 0 15px;
+    /* background: pink; */
+    margin-bottom: 30px;
+}
+.portfolio .portfolio_item_inner{
+    border: 6px solid var(--bg-black-100);
+    border-radius: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    padding: 6px 8px;
+    transition: all 0.3s ease ;
+}
+.portfolio_img img{
+    width: 100%;
+    display: block;
+    border-radius: 5px;
+}
+.portfolio .portfolio_item_inner .project_details h3{
+  color: var(--text-black-900);
+  font-size: 18px;
+  margin-top: 12px;
+}
+.portfolio .portfolio_item_inner:hover{
+    transform: scale(1.03);
+}
+.portfolio .portfolio_item_inner .project_details p{
+    color: var(--text-black-700);
+    font-size: 16px;
+}
+.project_details .portfolio_link{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 0;
+}
+.project_details .portfolio_link a{
+    color: var(--text-black-900);
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s ease ;
+}
+.project_details .portfolio_link a:hover{
+  color: var(--skin-color);
+  font-size: 18px;
+}
+
+/* ========= portfolio section end =========== */
 
 
 
