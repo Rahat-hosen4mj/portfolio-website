@@ -473,6 +473,7 @@ h3.my_profession{
     margin-bottom: 30px;
     flex: 0 0 33.33%;
     max-width: 33.33%;
+    padding: 0 15px;
 }
 .service .service_item_inner{
     background-color: var(--bg-black-100);
@@ -523,7 +524,6 @@ h3.my_profession{
 }
 .portfolio .portfolio_heading {
     flex: 0 0 100%;
-    /* background: red; */
     max-width: 100%;
     margin-bottom: 20px;
 }
@@ -536,7 +536,6 @@ h3.my_profession{
     flex: 0 0 33.33%;
     max-width: 33.33%;
     padding: 0 15px;
-    /* background: pink; */
     margin-bottom: 30px;
 }
 .portfolio .portfolio_item_inner{
@@ -574,7 +573,7 @@ h3.my_profession{
     color: var(--text-black-900);
     font-size: 16px;
     font-weight: 500;
-    transition: all 0.3s ease ;
+    transition: all 0.3s ease;
 }
 .project_details .portfolio_link a:hover{
   color: var(--skin-color);
@@ -586,11 +585,11 @@ h3.my_profession{
     color: var(--skin-color);
     text-align: center;
     font-size: 25px;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
 }
 .contact .contact_sub_tittle{
     color: var(--text-black-900);
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom: 50px;
     text-align: center;
 }
@@ -619,6 +618,37 @@ h3.my_profession{
     line-height: 25px;
     color: var(--text-black-700);
 }
+.contact .contact_form{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.contact_form .col-6{
+    flex: 0 0 50%;
+    max-width: 50%;
+    /* background: red; */
+}
+.form_item{
+    margin-bottom: 25px;
+}
+.contact .form_control{
+    width: 100%;
+    height: 50px;
+    border-radius: 20px;
+    background: var(--bg-black-100);
+    border: 1px solid var(--bg-black-50);
+    padding: 10px 20px;
+    font-size: 16px;
+    color: var(--text-black-700);
+    transition: all 0.3s ease;
+}
+.form_control:focus{
+    box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+}
+.contact textarea.form_control {
+    height: 140px;
+    width: 100%;
+}
+
 /* ========= Contact section end =========== */
 
 
