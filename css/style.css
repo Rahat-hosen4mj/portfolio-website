@@ -651,6 +651,47 @@ h3.my_profession{
 
 /* ========= Contact section end =========== */
 
+@media (max-width:1199px){
+    .aside{
+        left: -270px;
+    }
+    .main_content{
+        padding-left: 0;
+    }
+    .about .about_content .personal_info .info_item p span{
+        display: block;
+        margin-left: 0;
+    }
+}
+@media (max-width:991px){
+    .contact .contact_info_item,
+    .portfolio .portfolio_item,
+    .service .service_item{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .home .home_info{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .home .home_img{
+        display: none;
+    }
+}
+@media (max-width:767px){
+    .contact .contact_form .col-6,
+    .contact .contact_info_item,
+    .portfolio .portfolio_item,
+    .service .service_item,
+    .about .about_content .experience,
+    .about .about_content .education,
+    .about .about_content .skills,
+    .about .about_content .personal_info{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
 
 
 
