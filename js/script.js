@@ -15,8 +15,15 @@ for(let i=0; i<totalNav; i++){
     // console.log(navList[i])
     const a = navList[i].querySelector('a');
     a.addEventListener('click', function(){
+        for(let i=1; i<totalSection; i++){
+            allSection[i].classList.remove('back-section');
+        }
         // console.log(this)
         for(let j = 0; j<totalNav; j++){
+            if(navList[j].querySelector('a').classList.contains('active')){
+                // console.log("back-section" + navList[j].querySelector('a'))
+                allSection[j].classList.add('back-section')
+            }
             navList[j].querySelector('a').classList.remove('active')
         }
         this.classList.add('active');
@@ -31,3 +38,15 @@ function showSection(element){
     const target = element.getAttribute('href').split('#')[1];
     document.querySelector('#' + target).classList.add('active')
 }
+const navToggleBtn = document.querySelector(".nav_toggler"),
+   aside = document.querySelector(".aside");
+   navToggleBtn.addEventListener('click', () =>{
+    asideSectionTogglerBtn();
+   })
+   function asideSectionTogglerBtn(){
+    aside.classList.toggle("open");
+    navToggleBtn.classList.toggle("open");
+    for(let i=0; i<totalSection; i++){
+        allSection[i].classList.toggle("open")
+    }
+   }
