@@ -41,13 +41,28 @@ ul{
     /* width: 80%; */
     display: block;
     opacity: 1;
-    /* position: fixed; */
+    position: fixed;
     padding: 0 30px;
-    /* left: 270px;
+    left: 270px;
     top: 0;
     right: 0;
-    
-    z-index: 0; */
+    bottom: 0;
+    z-index: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.section.active{
+    z-index: 2;
+    opacity: 1;
+    animation: slideSection 0.9s ease;
+}
+@keyframes slideSection{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
 }
 .section_title h2{
     font-size: 40px;
@@ -80,9 +95,9 @@ ul{
 .dark_shadow{
     box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
 }
-.main_content{
+/* .main_content{
     padding-left: 270px;
-}
+} */
 .padd-15{
     padding: 0 15px;
 }
