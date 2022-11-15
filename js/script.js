@@ -39,15 +39,18 @@ const totalNav = navList.length;
 for(let i=0; i<totalNav; i++){
     // console.log(navList[i])
     const a = navList[i].querySelector('a');
-    a.addEventListener('click', function(){
-        for(let i=1; i<totalSection; i++){
-            allSection[i].classList.remove('back-section');
-        }
+    a.addEventListener('click', function(){  
+    //     for(let i=1; i<totalSection; i++){
+    //     allSection[i].classList.remove('back-section');
+    // }
+        removeBackSection()
+
         // console.log(this)
         for(let j = 0; j<totalNav; j++){
             if(navList[j].querySelector('a').classList.contains('active')){
+                addBackSection(j)
                 // console.log("back-section" + navList[j].querySelector('a'))
-                allSection[j].classList.add('back-section')
+                // allSection[j].classList.add('back-section')
             }
             navList[j].querySelector('a').classList.remove('active')
         }
@@ -57,6 +60,15 @@ for(let i=0; i<totalNav; i++){
             asideSectionTogglerBtn()
         }
     })
+}
+
+function removeBackSection(){
+    for(let i=1; i<totalSection; i++){
+        allSection[i].classList.remove('back-section');
+    }
+}
+function addBackSection(num){
+    allSection[num].classList.add('back-section')
 }
 function showSection(element){
     // console.log(element.getAttribute('href').split('#')[1])
@@ -74,8 +86,11 @@ function updateNav(element){
     }
 }
 document.querySelector('.hire_me').addEventListener('click', function(){
+    const sectionIndex = this.getAttribute("data-section-index");
+    console.log(sectionIndex)
     showSection(this)
     updateNav(this)
+    removeBackSection(sectionIndex)
 //    console.log(this)
 })
 const navToggleBtn = document.querySelector(".nav_toggler"),
